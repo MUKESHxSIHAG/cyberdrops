@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;800&display=swap');
+:root {
+    --ff-primary: 'Lato', sans-serif;
+
+    --fs-xs: 16px;
+    --fs-sm: 18px;
+    --fs-md: 20px;
+    --fs-lg: 24px;
+    --fs-xl: 28px;
+    --fs-xxl: 36px;
+    --fs-xxxl: 48px;
+    --fs-4xl: 72px;
+
+
+    --regular: 400;
+    --medium: 500;
+    --semiBold: 600;
+    --bold: 700;
+    --extraBold: 800;
+
+
+    --primary-color: #F1AC73;
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+
+
+    --line-normal: normal;
+}
+
+.fs-16{
+    font-size: var(--fs-xs);
+}
+
+.fs-18{
+    font-size: var(--fs-sm);
+}
+
+.fs-20 {
+    font-size: var(--fs-md);
+}
+
+.fs-24 {
+    font-size: var(--fs-lg);
+}
+
+.fs-28 {
+    font-size: var(--fs-xl);
+}
+
+.fs-36 {
+    font-size: var(--fs-xxl);
+}
+
+.fs-48 {
+    font-size: var(--fs-xxxl);
+}
+
+.fs-72 {
+    font-size: var(--fs-4xl);
+}
+
+
+/* *****FONT_WEIGHT****** */
+
+.fw-400{
+    font-weight: var(--regular);
+}
+
+.fw-500 {
+    font-weight: var(--medium);
+}
+
+.fw-600 {
+    font-weight: var(--semiBold);
+}
+
+.fw-700 {
+    font-weight: var(--bold);
+}
+
+.fw-800 {
+    font-weight: var(--extraBold);
+}
+
+
+/* ******Font_Color***** */
+
+.fc-primary{
+    color: var(--primary-color);
+}
+
+.fc-white{
+    color: var(--white-color);
+}
+
+.fc-black{
+    color: var(--black-color);
+}
+
+.line-normal{
+    line-height: var(--line-normal);
+}
+
+/* *****Font-Family****** */
+
+.ff-lato{
+    font-family: var(--ff-primary);
+}
+
+
+/* ******Media-Query******* */

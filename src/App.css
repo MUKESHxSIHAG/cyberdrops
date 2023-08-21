@@ -1,38 +1,950 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  list-style-type: none !important;
+  text-decoration: none !important;
 }
 
-.App-logo {
-  height: 40vmin;
+
+.navBtn:hover {
+  transition: 200ms all linear;
+  color: #F1AC73 !important;
+  background-color: #FFFFFF !important;
+  box-shadow: 4px 4px #F1AC73;
+}
+
+
+/* Preloader */
+
+.bg-color{
+  background-color: #000000;
+}
+
+/* ********Navbar****** */
+.navBtn {
+  padding: 8px 15px;
+  background: #F1AC73 !important;
+  border: transparent !important;
+  outline: none !important;
+  color: #FFFFFF;
+}
+
+.icon-circle {
+  height: 35px;
+  width: 35px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.icon-circle:hover {
+  border-radius: 50%;
+  background-color: #F1AC73;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.gap-12 {
+  gap: 12px;
+}
+
+.navHov:hover {
+  color: #F1AC73 !important;
+}
+
+/* *******Hero_Section******** */
+
+.max-411 {
+  max-width: 411px;
+}
+
+.mt-28 {
+  margin-top: 28px;
+}
+
+.line-86 {
+  line-height: 86px;
+}
+
+.max-463 {
+  max-width: 440px !important;
+}
+
+.max-547 {
+  max-width: 547px;
+}
+
+.heroBtn {
+  padding: 12px 25px;
+  background-color: #F1AC73;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 165px;
+  margin-top: 60px;
+}
+.pre_loader {
+  display: flex;
+  width: calc(228px * 10);
+  animation: zoom-in 1500ms linear infinite;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: translateX(0);
+    scale: 1;
+  }
+
+  50% {
+    transform: translateX(0);
+    scale: 0.85;
+  }
+}
+
+.heroBtn:hover {
+  transition: 200ms all linear;
+  color: #F1AC73 !important;
+  background-color: #FFFFFF !important;
+  box-shadow: 4px 4px #F1AC73;
+}
+
+.vh-75 {
+  min-height: 85vh;
+}
+
+
+/* Gradients*/
+
+.gradient-1{
+  position: absolute;
+  top: -20rem;
+  left: -18rem;
+}
+
+.gradient-2 {
+  position: absolute;
+  top: -20rem;
+  left: -18rem;
+}
+
+.gradient-3 {
+  position: absolute;
+  top: -20rem;
+  right: -19rem;
+}
+
+.gradient-4 {
+  position: absolute;
+  top:17rem;
+  left: -15rem;
+}
+
+.gradient-5 {
+  position: absolute;
+  top: 14rem;
+  right: -18rem;
+}
+
+.gradient-6 {
+  position: absolute;
+  top: -1rem;
+  left: -18rem;
+}
+
+.gradient-7 {
+  position: absolute;
+  top:-3rem;
+  right: -18rem;
+}
+
+.gradient-8 {
+  position: absolute;
+  top: -20rem;
+  right: -18rem;
+}
+
+.gradient-9 {
+  position: absolute;
+  top: -5rem;
+  right: -15rem;
+  margin-top: 40px;
+}
+
+
+
+/* *******Partners_Section********* */
+
+.partnersbgimg {
+  background-image: url(./assets/images/webp/PartnersBgImg.webp);
+  background-repeat: no-repeat;
+  /* background-position: cover !important; */
+  background-size: cover !important;
+
+}
+
+.partnersBorder {
+  border-radius: 25px;
+  max-width: 369px;
+  border: 2px solid #F1AC73;
+  height: 136px;
+
+}
+
+.mt-150 {
+  padding-top: 150px;
+}
+
+.gap-42 {
+  gap: 42px;
+}
+
+.padding-left-right {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.padding-left-right1 {
+  padding-left: 45px;
+  padding-right: 45px;
+  width: 100%;
+}
+
+.pb-166 {
+  padding-bottom: 166px;
+}
+
+.trans {
+  transform: translateY(-45px);
+}
+
+/* ******Our_Algo****** */
+
+.max-528 {
+  max-width: 528px;
+}
+
+.algoCard {
+  max-width: 190;
+  border-radius: 35px;
+  border: 2px solid #F1AC73;
+  background: rgba(255, 255, 255, 0.10);
+}
+
+
+/* What We Do */
+
+
+.grid1 {
+  grid-row: 1/2;
+  grid-column: 1/3;
+}
+
+.grid2 {
+  grid-row: 1/2;
+  grid-column: 3/5;
+}
+
+.grid3 {
+  grid-row: 2/3;
+  grid-column: 2/4;
+  margin-top: -35px;
+
+}
+
+.grid4 {
+  grid-row: 2/3;
+  grid-column: 4/6;
+  margin-top: -35px;
+}
+
+.max-463 {
+  max-width: 463px;
+}
+
+
+.wedo-bg-umbrella{
+  bottom: -10rem;
+  right: 2%;
+  position: absolute;
+}
+
+
+
+
+/* ********How-It-Works********* */
+
+.howWorksCard {
+  /* border-radius: 25px;
+  padding: 19.96 27px 50px 27px ; */
+  height: 290px;
+  cursor: pointer;
+}
+
+.howWorksCard:hover {
+  background-color: #F1AC73;
+  transition: all 200ms;
+}
+
+.howWorksCard:hover .circle {
+  background-color: #FFFFFF;
+}
+
+.howWorksCard:hover .circle h3 {
+  color: #F1AC73 !important;
+}
+
+.mh-24 {
+  min-height: 24px;
+}
+
+.circle {
+  width: 86px;
+  min-height: 86px;
+  border-radius: 50%;
+  background-color: #F1AC73;
+
+}
+
+.max-222 {
+  max-width: 222px;
+}
+
+
+.my_box {
+  /* broder-radius should be same on both my_box and my_box::after */
+  border-radius: 25px;
+  /* box background */
+  background: linear-gradient(140.61deg,
+      rgba(255, 255, 255, 0.08) -1.87%,
+      rgba(255, 255, 255, 0) 105.41%);
+  backdrop-filter: blur(11px);
+  /* background: transparent; */
+  position: relative;
+  /* below padding is equivalent to line no.46 which is padding-5px */
+  padding: 20px 27px 50px 27px;
+}
+
+.my_box::after {
+  content: "";
+  position: absolute;
+  /* broder-radius should be same on both my_box and my_box::after */
+  border-radius: 25px;
+  /* this paadding is the width of border */
+  padding: 2px;
+  /* broder-color */
+  background: linear-gradient(180deg,
+      rgba(241, 172, 115, 1),
+      rgba(21, 171, 255, 1));
+  /*  we are using below property instead of left-0 top-0 bottom-0 right-0 */
+  inset: 0;
+  /* height: 100%;
+           width: 100%;
+           top: 0;
+           left: 0; */
+  -webkit-mask: linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  /* the mask-composite property specifies that the XOR blending mode should be used to combine the mask image and the element's background. */
+  -webkit-mask-composite: xor;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+/* *******Meet_UP********* */
+.sliderBg {
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  max-width: 552px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.meetup-bg-umbrella{
+  position: absolute;
+  bottom: -12rem;
+  right: 2%;
+}
+
+.slider-bg-umbrella1{
+  top: -6rem;
+  left: 2%;
+}
+
+.slick-next:before {
+  content: url(./assets/images/svg/Rightbtn.svg) !important;
+}
+.slick-prev:before {
+  content: url(./assets/images/svg/Leftbtn.svg) !important;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: 1 !important;
+  color: white !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.max-193 {
+  max-width: 193px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.slick-dots li button:before {
+  height: 20px;
+  width: 20px;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  color: #FFFFFF;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 40px;
+  transform: translateX(-56px);
 }
 
-.App-link {
-  color: #61dafb;
+.slick-dots li.slick-active button:before {
+  color: #FFFFFF !important;
+  opacity: 1 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.ps-80 {
+  padding-left: 75px;
+}
+
+
+
+/* FAQ'S */
+
+
+.faq-bg-umbrella{
+  top: 9rem;
+  left: 12%;
+  position: absolute;
+}
+
+.accordion-button:not(.collapsed) {
+  border-color: transparent !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+  border-color: rgba(0, 0, 0, 0) !important;
+}
+
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 25px !important;
+  height: 25px !important;
+  margin-left: auto;
+  content: "";
+  background-image: url('../src/assets//images//svg//Arrow.svg') !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  transition: var(--bs-accordion-btn-icon-transition);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-active-icon);
+  transform: rotate(-90deg) !important;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: unset !important;
+}
+
+.accordion-button {
+  background-color: transparent !important;
+  padding: 0px !important;
+}
+
+.accordion-body {
+  padding: 0px !important;
+}
+
+.accordion-item {
+  border: 1px solid transparent !important;
+  background-image: linear-gradient(#000000, #000000), linear-gradient(#F1AC73 40%, #15ABFF);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border-radius: 10px;
+  backdrop-filter: blur(15px) !important;
+}
+
+.accordions {
+  padding: 25px 46px;
+}
+
+.max-967 {
+  max-width: 967px;
+}
+
+
+/* ******Footer******* */
+.max-444 {
+  max-width: 444px;
+}
+
+
+.footerLine {
+  opacity: 0.3;
+  background: #FFF;
+  width: 100%;
+  height: 2px;
+
+}
+
+.opacity1 {
+  opacity: 0.5;
+}
+
+
+
+
+
+
+/* Roadmap */
+
+.roadmap-bg-img{
+  top: 45rem !important;
+  left: 2%;
+  z-index: 5;
+  position: absolute;
+
+}
+.roadmap-bg-img2{
+  bottom: 5rem;
+  right: 2%;
+  position: absolute;
+
+}
+
+
+/* TIMELINE CSS */
+.bg_roadmap {
+  background-image: url(../src/assets/images/webp/bg_roadmap.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+@property --clip-vertical {
+  syntax: "<percentage>";
+  initial-value: 95%;
+  inherits: false;
+}
+
+@property --clip-horizontal {
+  syntax: "<percentage>";
+  initial-value: 100%;
+  inherits: false;
+}
+
+@property --intro-radial {
+  syntax: "<percentage>";
+  initial-value: 0%;
+  inherits: false;
+}
+
+main {
+  --timeline-width: 100%;
+  position: relative;
+  max-width: 1000px;
+  margin-inline: auto;
+
+  &::before {
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    width: 0;
+    min-height: 1424px;
+    margin-left: -3px;
+    border-right: 3px dashed #fff;
+    content: "";
   }
+}
+
+.stop {
+  --clip-horizontal: 100%;
+  --clip-vertical: 93%;
+
+  position: relative;
+  height: 200px !important;
+  width: calc(var(--timeline-width) / 2);
+  padding-inline: 50px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 71px;
+    height: 71px;
+    border-radius: 50%;
+    border: 1px solid white;
+    content: "";
+    translate: 50% 0;
+  }
+
+  &::after {
+    min-width: 160px;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    width: 30% !important;
+    height: calc(15vh - 114px);
+    border-width: 16px;
+    border-style: dashed;
+    border-color: transparent !important;
+    clip-path: inset(0 0 var(--clip-vertical) var(--clip-horizontal));
+    transform-origin: center;
+    animation: showLine linear both;
+    animation-range: cover -15% contain 40%;
+    content: "";
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../src/assets/images/png/roadmap_line_2.png);
+
+  }
+
+
+  &:nth-child(even) {
+    justify-content: flex-end;
+    text-align: end;
+    margin-left: calc(var(--timeline-width) / 2);
+
+    &::before {
+      right: auto;
+      left: 0;
+      translate: -50% 0;
+    }
+
+    &::after {
+      right: auto;
+      left: 25px;
+      border-width: 16px;
+      clip-path: inset(0 var(--clip-horizontal) var(--clip-vertical) 0);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(../src/assets/images/png/roadmap_line.png);
+
+    }
+  }
+}
+
+.stop .circle {
+  height: 14px;
+  width: 14px;
+  background-color: #f1ac73;
+  border-radius: 50%;
+
+}
+
+.stop1::before {
+  background-image: url(../src/assets/images/webp/stop1.webp);
+
+  z-index: 4;
+
+}
+
+.stop2::before {
+  background-image: url(../src/assets/images/webp/stop2.webp);
+  z-index: 4;
+
+}
+
+.stop3::before {
+  background-image: url(../src/assets/images/webp/stop3.webp);
+  z-index: 4;
+
+}
+
+.stop4::before {
+  background-image: url(../src/assets/images/webp/stop4.webp);
+  z-index: 4;
+
+}
+
+.stop5::before {
+  background-image: url(../src/assets/images/webp/stop5.webp);
+  z-index: 4;
+
+}
+
+.stop6::before {
+  background-image: url(../src/assets/images/webp/stop6.webp);
+  z-index: 4;
+
+}
+
+.stop7::before {
+  background-image: url(../src/assets/images/webp/stop7.webp);
+  z-index: 4;
+
+}
+
+.stop8::before {
+  background-image: url(../src/assets/images/webp/stop8.webp);
+  z-index: 4;
+
+}
+
+.text {
+  animation: slideIn linear both;
+  animation-timeline: view(block);
+  animation-range: cover 0% contain 12%;
+}
+
+.text-1 {
+  margin-right: 10rem;
+}
+
+.text-2 {
+  margin-left: 10rem;
+}
+
+/* keyframes */
+@keyframes popIn {
+  0% {
+    scale: 0;
+  }
+
+  60% {
+    scale: 1;
+  }
+}
+
+@keyframes moveGradient {
   to {
-    transform: rotate(360deg);
+    --intro-radial: 100%;
+  }
+}
+
+@keyframes showLine {
+  0% {
+    --clip-horizontal: 100%;
+    --clip-vertical: 95%;
+  }
+
+  60% {
+    --clip-horizontal: 0%;
+    --clip-vertical: 95%;
+  }
+
+  100% {
+    --clip-horizontal: 0%;
+    --clip-vertical: 0%;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    translate: 0 50%;
+  }
+
+  100% {
+    opacity: 1;
+    translate: 0 3%;
+  }
+}
+
+/* Default styles */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* TIMELINE MEDIA QUERY  */
+/* Some mobile improvements I did after the demo was finished :) I know this could be done a bit more optimised if i'd done it right away */
+@media screen and (width <=600px) {
+  main::before {
+    left: 50px;
+    margin-left: 0;
+    height: 88%;
+  }
+
+  .text{
+    left: 10%;
+    position: relative;
+    
+    
+  }
+    .text-1 {
+      margin-right: 0;
+    }
+  
+    .text-2 {
+      margin-left: 0;
+    }
+
+  .stop,
+  .stop:nth-child(even) {
+    justify-content: flex-end;
+    text-align: end;
+    margin-bottom: 30px;
+    margin-left: 53px;
+    width: calc(var(--timeline-width) - 33px);
+    padding-inline: 30px 8px;
+
+    &::before {
+      right: auto;
+      left: 0;
+      translate: -50% 0;
+    }
+
+    &::after {
+      right: auto;
+      left: 0px;
+      border-width: 16px;
+      clip-path: inset(0 var(--clip-horizontal) var(--clip-vertical) 0);
+      background-image: none;
+    }
+
+    .text {
+      text-align: left;
+    }
+  }
+}
+
+
+
+
+
+
+@media (max-width:1470px) {
+  
+  .slick-next:before {
+      
+    position: absolute;
+    transform: translateY(17rem) !important;
+    right: 50% !important;
+    }
+  
+    .slick-prev:before {
+      position: absolute;
+        transform: translateY(17rem) !important;
+        left: 50% !important;
+    }
+}
+
+
+@media (max-width:992px) {
+  .meetup-bg-umbrella{
+    display: none;
+  }
+
+  .nav_bar {
+    color: #FFFFFF;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: rgba(59, 59, 59, 1);
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 1;
+  }
+
+  .d_flex {
+    display: flex;
+  }
+
+  .justify_content-center {
+    justify-content: center;
+  }
+
+  .align_items-center {
+    align-items: center;
+  }
+
+  .flex_column {
+    flex-direction: column;
+  }
+
+  .text_center {
+    text-align: center;
+  }
+
+  .max-463 {
+    max-width: none;
+  }
+
+  .show {
+    left: 0;
+  }
+
+
+
+}
+
+
+@media (max-width:768px) {
+  .mt-150 {
+    padding-top: 0px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:576px) {
+  .cardHeading {
+    padding-top: 25px !important;
+    margin-bottom: 45px;
+  }
+
+  .grid1 {
+    grid-row: 1/2;
+    grid-column: 1/3;
+  }
+
+  .grid2 {
+    grid-row: 2/3;
+    grid-column: 1/3;
+  }
+
+  .grid3 {
+    grid-row: 3/4;
+    grid-column: 1/3;
+  }
+
+  .grid4 {
+    grid-row: 4/5;
+    grid-column: 1/3;
+  }
+
+  .mt-10 {
+    margin-top: 10px;
   }
 }
