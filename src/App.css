@@ -17,8 +17,16 @@
 
 /* Preloader */
 
-.bg-color{
+.bg-color {
   background-color: #000000;
+}
+
+.z-99 {
+  z-index: 99 !important;
+}
+
+.z_1 {
+  z-index: 1;
 }
 
 /* ********Navbar****** */
@@ -84,6 +92,7 @@
   max-width: 165px;
   margin-top: 60px;
 }
+
 .pre_loader {
   display: flex;
   width: calc(228px * 10);
@@ -116,7 +125,7 @@
 
 /* Gradients*/
 
-.gradient-1{
+.gradient-1 {
   position: absolute;
   top: -20rem;
   left: -18rem;
@@ -136,7 +145,7 @@
 
 .gradient-4 {
   position: absolute;
-  top:17rem;
+  top: 17rem;
   left: -15rem;
 }
 
@@ -154,7 +163,7 @@
 
 .gradient-7 {
   position: absolute;
-  top:-3rem;
+  top: -3rem;
   right: -18rem;
 }
 
@@ -263,7 +272,7 @@
 }
 
 
-.wedo-bg-umbrella{
+.wedo-bg-umbrella {
   bottom: -10rem;
   right: 2%;
   position: absolute;
@@ -358,13 +367,13 @@
   max-width: 552px;
 }
 
-.meetup-bg-umbrella{
+.meetup-bg-umbrella {
   position: absolute;
   bottom: -12rem;
   right: 2%;
 }
 
-.slider-bg-umbrella1{
+.slider-bg-umbrella1 {
   top: -6rem;
   left: 2%;
 }
@@ -372,9 +381,11 @@
 .slick-next:before {
   content: url(./assets/images/svg/Rightbtn.svg) !important;
 }
+
 .slick-prev:before {
   content: url(./assets/images/svg/Leftbtn.svg) !important;
 }
+
 .slick-prev:before,
 .slick-next:before {
   font-family: 'slick';
@@ -421,7 +432,7 @@
 /* FAQ'S */
 
 
-.faq-bg-umbrella{
+.faq-bg-umbrella {
   top: 9rem;
   left: 12%;
   position: absolute;
@@ -509,14 +520,15 @@
 
 /* Roadmap */
 
-.roadmap-bg-img{
+.roadmap-bg-img {
   top: 45rem !important;
   left: 2%;
   z-index: 5;
   position: absolute;
 
 }
-.roadmap-bg-img2{
+
+.roadmap-bg-img2 {
   bottom: 5rem;
   right: 2%;
   position: absolute;
@@ -784,19 +796,20 @@ main {
     height: 88%;
   }
 
-  .text{
+  .text {
     left: 10%;
     position: relative;
-    
-    
+
+
   }
-    .text-1 {
-      margin-right: 0;
-    }
-  
-    .text-2 {
-      margin-left: 0;
-    }
+
+  .text-1 {
+    margin-right: 0;
+  }
+
+  .text-2 {
+    margin-left: 0;
+  }
 
   .stop,
   .stop:nth-child(even) {
@@ -833,24 +846,24 @@ main {
 
 
 @media (max-width:1470px) {
-  
+
   .slick-next:before {
-      
+
     position: absolute;
     transform: translateY(17rem) !important;
     right: 50% !important;
-    }
-  
-    .slick-prev:before {
-      position: absolute;
-        transform: translateY(17rem) !important;
-        left: 50% !important;
-    }
+  }
+
+  .slick-prev:before {
+    position: absolute;
+    transform: translateY(17rem) !important;
+    left: 50% !important;
+  }
 }
 
 
 @media (max-width:992px) {
-  .meetup-bg-umbrella{
+  .meetup-bg-umbrella {
     display: none;
   }
 

@@ -5,21 +5,21 @@ import Bg_umbrella3 from '../assets/images/png/Bg_umbrella3.png'
 const Roadmap = () => {
   return (
     <>
-      <section className="position-relative">
+      <section className="position-relative z_1">
         <img className="roadmap-bg-img" src={Bg_umbrella3} alt="Background Umbrella" />
         <img className="roadmap-bg-img2" src={Bg_umbrella1} alt="Bg-Umbrella-Image" />
-        
+
 
         <div class="intro pt-5 mt-5">
           <h4 className=" d-flex  justify-content-center text-white fs-48 fw-700 ff-lato">Road<span className="fc-primary fs-48 fw-700 ff-lato ">Map</span></h4>
         </div>
-        <div className="bg_roadmap mt-5">
+        <div className="bg_roadmap  mt-5">
           <main className="pt-5">
             <article class="stop stop1 ">
               <div class="text-white text-sm-end text text-1">
                 <h6 className="ff-lato fs-24 fw-400 ">
                   March 2022
-                </h6> 
+                </h6>
                 <p>
                   1000 Drops Launch on Ethereum
                 </p>
@@ -87,7 +87,7 @@ const Roadmap = () => {
             </article>
           </main>
         </div>
-     </section>
+      </section>
     </>
   );
 };
